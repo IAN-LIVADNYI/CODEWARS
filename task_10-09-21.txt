@@ -1,0 +1,23 @@
+// Write a code where you will find a perimeter of a square, where side a = 10, side b = 12; 
+let side_A = 10;
+let side_B = 12;
+let perimetr = (side_A + side_B) * 2
+console.log(perimetr)
+========================================================
+
+// Create a string with a name userAge and a value “21” and change the data type from a string to a number and add 10 to that number.
+let userAge = "21";
+let result = (+userAge) + 10
+// let result = userAge*1 + 10
+console.log(result)
+
+=======================================================
+
+//Create 5 variables, initialize them with integers and find the average of variables. Print the result to console
+let a = 1;
+let b = 2;
+let c = 3;
+let d = 4;
+let e = -5;
+let res = (a + b + c + d + e)/5;
+console.log(res);
