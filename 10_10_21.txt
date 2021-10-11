@@ -15,7 +15,7 @@ for(i=0; i < string.length; i++) {
 }
 
 ======================================================================
-https://www.codewars.com/kata/5a00e05cc374cb34d100000d
+//www.codewars.com/kata/5a00e05cc374cb34d100000d
 const reverseSeq = n => {
   let arr = []
   for(i=n; i>0; i--){
@@ -23,3 +23,9 @@ const reverseSeq = n => {
   }
   return arr;
 };
+
+=====================================================================
+//www.codewars.com/kata/53369039d7ab3ac506000467/train/javascript
+function boolToWord( bool ){
+  return (bool === true) ? 'Yes': 'No'
+}
