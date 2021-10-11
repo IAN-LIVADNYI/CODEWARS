@@ -1,0 +1,16 @@
+//www.codewars.com/kata/577bd026df78c19bca0002c0/train/javascript
+function correct(string){
+  let str = '';
+for(i=0; i < string.length; i++) {
+  if(string[i] == '5') {
+    str += "S"
+  } else if (string[i] == '0') {
+    str += "O"
+  } else if(string[i] == '1') {
+    str += "I"
+  } else {str += string[i]
+}
+  }
+	return str
+}
+======================================================================
