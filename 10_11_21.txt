@@ -21,3 +21,18 @@ return +str2
 }
 
 ====================================================================
+//Create a variable, initialize it with a positive integer. Make it negative and print the result to console.
+let a = 5
+// let b = (-a)
+// console.log(b)
+console.log(-a)
+
+===============================================================================================================================
+//Create two variables with values(5, 7). The first with data type Integer and the second with a String data type .
+Raise the number 5 to the power of 2, save as a result. Print in the console the sum of the result and the second variable.
+let a = 5;
+let b = "7";
+let res = a**2;
+console.log(res + +b);
+
+=========================================================================
