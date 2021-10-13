@@ -1,0 +1,16 @@
+//www.codewars.com/kata/55e2adece53b4cdcb900006c
+function race(v1, v2, g) {
+  let timeForGinSec = (g * 3600 / (v2 - v1));
+  let hours = Math.floor(timeForGinSec / 3600);
+  let mins =  Math.floor(timeForGinSec % 3600 / 60);
+  let sec = Math.floor(timeForGinSec % 3600 % 60);
+  let res = [];
+  if (v1 >= v2) {
+    return null
+  } else {
+    res.push(hours, mins, sec);
+   return(res);          
+  }
+}
+
+===========================================================================
