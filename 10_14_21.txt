@@ -18,3 +18,14 @@ if(p >= 0) {
 }
 
 ====================================================================================
+https://www.codewars.com/kata/5a662a02e626c54e87000123/train/javascript
+function extraPerfect(n){
+  let arr = [];
+  if (n % 2 === 0){
+    n -=1
+  }
+  for (let i = 0; n >= 1; n -= 2){
+    arr.unshift(n)
+  }
+  return arr
+}
