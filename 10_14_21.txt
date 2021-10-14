@@ -1,0 +1,20 @@
+https://www.codewars.com/kata/564d0490e96393fc5c000029
+var coinCombo = function(cents) {
+let res = [];
+let q = Math.floor(cents / 25);
+let d = Math.floor((cents - q * 25) / 10);
+let n = Math.floor(((cents - q * 25 - d * 10) / 5));
+let p = cents % 5
+if(p >= 0) {
+  res.push(p)
+ } if (n >= 0){
+   res.push(n)
+ } if (d >= 0){
+   res.push(d)
+ } if (q >= 0){
+   res.push(q)
+ } 
+  return res;
+}
+
+====================================================================================
