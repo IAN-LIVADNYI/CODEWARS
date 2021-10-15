@@ -90,3 +90,13 @@ return string
 }
 
 =====================================================================================
+www.codewars.com/kata/56b1f01c247c01db92000076
+function doubleChar(str) {
+let string = '';
+  for(let ch = 0; ch < str.length; ch++){
+    string += str[ch].repeat(2);
+  }
+  return string
+}
+
+=====================================================================================
