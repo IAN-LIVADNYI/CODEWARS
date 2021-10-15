@@ -66,3 +66,18 @@ function mouthSize(animal) {
 }
 
 ====================================================================================
+www.codewars.com/kata/5b180e9fedaa564a7000009a
+function solve(s){
+  let lower = 0;
+  let upper = 0;
+  for(let i = 0; i < s.length; i++){
+  if(s[i] === s[i].toLowerCase()) {
+  lower += 1
+}  else upper += 1;
+   }
+  if(lower >= upper) {
+    return s.toLowerCase()
+  } else return s.toUpperCase()
+}
+
+=====================================================================================
