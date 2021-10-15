@@ -23,3 +23,26 @@ for(i = 0; i < str.length; i++){
 }
 
 ===================================================================================
+www.codewars.com/kata/568dc014440f03b13900001d
+function getDrinkByProfession(param){
+  param = param.toLowerCase()
+  let drink;
+switch(param){
+  case "jabroni": drink = "Patron Tequila";
+    break;
+case "school counselor": drink = "Anything with Alcohol"
+    break;
+case "programmer": drink = "Hipster Craft Beer"
+    break;
+case "bike gang member": drink = "Moonshine"
+    break;
+case "politician": drink = "Your tax dollars"
+    break;
+case "rapper": drink = "Cristal"
+    break;
+default: drink = "Beer"
+}
+  return drink
+}
+
+=====================================================================================
