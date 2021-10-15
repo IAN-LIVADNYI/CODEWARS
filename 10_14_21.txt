@@ -66,3 +66,27 @@ function spacify(str) {
 }
 
 =====================================================================================
+https://www.codewars.com/kata/57eae20f5500ad98e50002c5
+function noSpace(x){
+let str = "";
+  for (let i = 0; i < x.length; i++){
+    if (x[i] !== " ") {
+      str += x[i]
+    }
+  }
+  return str
+}
+
+====================================================================================
+www.codewars.com/kata/56bc28ad5bdaeb48760009b0
+function removeChar(str){
+ let string = ''
+  for(let ch = 1; ch < str.length; ch++){
+    if(ch !== str.length-1){
+      string += str[ch]
+    }
+  }
+return string
+}
+
+=====================================================================================
