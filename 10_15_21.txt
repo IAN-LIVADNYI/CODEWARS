@@ -104,3 +104,18 @@ function capitalizeWord(word) {
 }
 
 =====================================================================================
+www.codewars.com/kata/57e3f79c9cb119374600046b
+function hello(name) {
+  let str = 'Hello, '
+  if(name){
+    for(let i = 0; i < name.length; i++){
+      if(i === 0) {
+        str += name[i].toUpperCase();
+      } else str += name[i].toLowerCase();
+      
+    }
+  } else return str += 'World!';
+return str + '!';
+}
+
+======================================================================================
