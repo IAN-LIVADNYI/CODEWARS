@@ -162,3 +162,18 @@ if(price){
 } 
 
 =======================================================================================
+www.codewars.com/kata/570bcd9715944a2c8e000009
+function sc(floor){
+ let result = '';
+  if(floor <=1 ){
+    return result;
+  }
+  if(floor <=6){
+    result += 'Aa~ '.repeat(floor-1) + 'Pa! Aa!' 
+  }
+  else result += 'Aa~ '.repeat(floor-1) + 'Pa!'
+  
+  return result
+}
+
+=======================================================================================
