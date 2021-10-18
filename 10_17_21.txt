@@ -1,0 +1,19 @@
+www.codewars.com/kata/563cf89eb4747c5fb100001b
+function removeSmallest(numbers) {
+  let min = numbers[0];
+  let newArr = [];
+  for (let i = 0; i < numbers.length; i++){
+    if(min > numbers[i]){
+      min = numbers[i];
+    }
+  }
+  let indexMin = numbers.indexOf(min);
+  for(let i = 0; i < numbers.length; i++){
+    if(i != indexMin){
+      newArr.push(numbers[i]);
+    }
+  }
+  return newArr;
+}
+
+=======================================================
