@@ -30,3 +30,16 @@ function squareSum(numbers){
 }
 
 ==================================================
+www.codewars.com/kata/how-good-are-you-really
+function betterThanAverage(classPoints, yourPoints) {
+  classPoints.push(yourPoints)
+  let sum = 0;
+  let aver;
+  for(let i = 0; i < classPoints.length; i++){
+    sum += classPoints[i]
+    aver = (sum / classPoints.length)
+  }
+  return aver >= yourPoints ? false : true
+}
+
+===========================================================
