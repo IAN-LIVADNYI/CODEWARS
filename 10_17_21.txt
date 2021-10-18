@@ -17,3 +17,25 @@ function removeSmallest(numbers) {
 }
 
 =======================================================
+www.codewars.com/kata/545a4c5a61aa4c6916000755
+var gimme = function (inputArray) {
+let minInt = inputArray[0];
+let maxInt = inputArray[0];
+for(let i = 0;i < inputArray.length; i++){
+  if(inputArray[0] > inputArray[i]){
+    minInt = inputArray[i];
+  } 
+   if(maxInt < inputArray[i]){
+     maxInt = inputArray[i];
+   }
+  }
+  let indexMin = inputArray.indexOf(minInt)
+  let indexMax = inputArray.indexOf(maxInt)
+  for(let i = 0; i < inputArray.length; i++){
+    if(i !== indexMin && i !== indexMax){
+      return inputArray.indexOf(inputArray[i])
+    }
+  }
+}
+
+========================================================
