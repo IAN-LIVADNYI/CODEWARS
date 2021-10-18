@@ -43,3 +43,20 @@ function betterThanAverage(classPoints, yourPoints) {
 }
 
 ===========================================================
+www.codewars.com/kata/5648b12ce68d9daa6b000099
+function number(busStops){
+let arr = []
+let inP = 0;
+let outP = 0;
+for(let i = 0; i < busStops.length; i++){
+arr.push(...busStops[i])
+}
+for(i = 0; i < arr.length; i++){
+  if(i % 2 === 0){
+    inP += arr[i]
+  } else outP += arr[i]
+}
+ return inP - outP
+}
+
+==========================================================
