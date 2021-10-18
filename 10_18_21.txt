@@ -1,0 +1,22 @@
+www.codewars.com/kata/5413759479ba273f8100003d
+function reverse(array) {
+let conv = [];
+for(let i = 0;i <= array.length; i++){
+  conv.unshift(array[i]);
+}
+  conv.shift();
+  return conv
+}
+==========
+OR 
+==========
+reverse = function(array) {
+for(let i = 0; i < array.length / 2; i++){
+let temp = array[i];
+array[i] = array[array.length - 1- i];
+array[array.length-1 - i] = temp;
+}
+ return array;
+}
+
+==================================================
