@@ -103,3 +103,14 @@ function range(startNum, endNum){
  }
 
 ==========================================================
+www.codewars.com/kata/58ca658cc0d6401f2700045f
+function findMultiples(integer, limit) {
+  let m = Math.floor(limit / integer);
+  let arr = [];
+  for(let i = 1; i <= m; i++){
+  arr.push(integer * i)
+  }
+  return arr;
+}
+
+==========================================================
