@@ -114,3 +114,27 @@ function findMultiples(integer, limit) {
 }
 
 ==========================================================
+www.codewars.com/kata/5841f4fb673ea2a2ae000111
+function generateIntegers(n) {
+ let arr = [];
+ let i = 0;
+while(i <= n){
+ arr.push(1 * i);
+  i++;
+}  
+  return arr;
+}
+
+==========================================================
+www.codewars.com/kata/5841f4fb673ea2a2ae000111
+function generateIntegers(n) {
+ let arr = [];
+ let i = 0;
+while(i <= n){
+ arr.push(1 * i);
+  i++;
+}  
+  return arr;
+}
+
+============================================================
