@@ -39,3 +39,31 @@ for(let i = 0;i < inputArray.length; i++){
 }
 
 ========================================================
+www.codewars.com/kata/576b93db1129fcf2200001e6
+function sumArray(array){
+if (array) {
+let maxi = array[0];
+let mini = array[0];
+  
+for(let i = 1; i < array.length; i++){
+  if(maxi < array[i]){
+     maxi = array[i];
+  };
+  if(mini > array[i]){
+     mini = array[i];
+  };
+};
+  let indexMaxi = array.indexOf(maxi);
+  let indexMini = array.indexOf(mini);
+  let sum = 0;
+  for(let i = 0; i < array.length; i++){
+    if(i !== indexMaxi && i !== indexMini){
+      sum += array[i];
+    }
+  }
+  return sum;
+}
+  return 0;
+}
+
+=========================================================
