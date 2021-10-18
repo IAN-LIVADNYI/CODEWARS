@@ -89,3 +89,17 @@ var max = function(list){
 }
 
 ==========================================================
+www.codewars.com/kata/598057c8d95a04f33f00004e
+function range(startNum, endNum){
+  let arr = [];
+  if (endNum === startNum )
+    return arr;
+  else { 
+  for(let i = startNum; i < endNum-1; i++){
+     arr.push(i+1)
+ }
+  return arr
+    }
+ }
+
+==========================================================
