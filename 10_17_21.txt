@@ -67,3 +67,25 @@ for(let i = 1; i < array.length; i++){
 }
 
 =========================================================
+www.codewars.com/kata/577a98a6ae28071780000989
+var min = function(list){
+  let mini = list[0];
+    for(let i = 0; i < list.length; i++){
+      if(mini >= list[i]){
+        mini = list[i];
+      }
+    }
+    return mini;
+}
+
+var max = function(list){
+   let maxi = list[0];
+   for(let i = 0; i < list.length; i++){
+     if(maxi <= list[i]){
+       maxi = list[i];
+     }
+   }
+    return maxi;
+}
+
+==========================================================
