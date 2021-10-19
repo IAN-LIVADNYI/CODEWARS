@@ -124,6 +124,16 @@ for(let i = 0; i < x.length; i++){
 }
   return (integers - kvazi)
 }
+================
+OR
+================
+function divCon(x){
+let integers = 0, kvazi = 0;
+for(let i = 0; i < x.length; i++) typeof (x[i]) === 'number' ? integers += x[i] : kvazi += +x[i];
+return integers - kvazi
+}
 
 =========================================================
+
+
 
