@@ -162,5 +162,15 @@ while(i < input.length){
 }
 
 =========================================================
+www.codewars.com/kata/58acfe4ae0201e1708000075
+function inviteMoreWomen(L) {
+  let sum = 0;
+  for(let i = 0; i < L.length; i++){
+    L[i] === 1 ? sum += 1 : sum += -1
+  }
+  return sum > 0 ? true : false;
+}
+
+=========================================================
 
 
