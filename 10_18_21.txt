@@ -113,4 +113,17 @@ function find_average(array) {
 }
 
 =========================================================
+www.codewars.com/kata/divide-and-conquer
+function divCon(x){
+let integers = 0;
+let kvazi = 0;
+for(let i = 0; i < x.length; i++){
+  if(typeof (x[i]) === 'number'){
+    integers += x[i];
+  } else kvazi += +x[i];
+}
+  return (integers - kvazi)
+}
+
+=========================================================
 
