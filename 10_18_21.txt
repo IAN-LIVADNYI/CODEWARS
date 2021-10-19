@@ -148,5 +148,19 @@ return sum;
 }
 
 =========================================================
+www.codewars.com/kata/586beb5ba44cfc44ed0006c3
+function sumEvenNumbers(input) {
+let sum = 0;
+let i = 0;
+while(i < input.length){
+  if(input[i] % 2 === 0 && Number.isInteger(input[i])){
+    sum += input[i];
+  };
+  i++;
+}
+  return sum
+}
+
+=========================================================
 
 
