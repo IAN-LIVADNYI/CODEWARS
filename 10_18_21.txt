@@ -41,6 +41,18 @@ function betterThanAverage(classPoints, yourPoints) {
   }
   return aver >= yourPoints ? false : true
 }
+============
+OR
+============
+function betterThanAverage(classPoints, yourPoints) {
+  let sum = 0;
+  let i = 0;
+  while(i < classPoints.length){
+    sum += classPoints[i];
+    i++
+  }
+  return ((sum + yourPoints)/ (classPoints.length + 1)) < yourPoints ? true : false 
+}
 
 ===========================================================
 www.codewars.com/kata/5648b12ce68d9daa6b000099
