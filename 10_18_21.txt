@@ -172,5 +172,19 @@ function inviteMoreWomen(L) {
 }
 
 =========================================================
+www.codewars.com/kata/odd-or-even
+function oddOrEven(array) {
+let sum = 0;
+  if (array.length < 1) return 'even';
+  for(let i = 0; i < array.length; i++){
+    sum += array[i]
+  }
+  return sum % 2 === 0 ? 'even' : 'odd'
+}
+
+=========================================================
+
+
+
 
 
