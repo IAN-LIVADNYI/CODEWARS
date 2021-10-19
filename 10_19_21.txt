@@ -1,0 +1,20 @@
+www.codewars.com/kata/583989556754d6f4c700018e
+function multiples(s1,s2,s3){
+  let bigger;
+  let smaller;
+  let arr = [];
+  
+  if (s1 > s2) {
+      bigger = s1; smaller = s2;
+  }   else {
+      bigger = s2; smaller = s1;
+      }
+  for(let i = 1;bigger * i < s3; i++){
+      if(bigger * i % smaller === 0){
+      arr.push(bigger * i)
+    }
+  }
+  return arr
+}
+
+=========================================================================
