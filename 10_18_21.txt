@@ -58,5 +58,18 @@ for(i = 0; i < arr.length; i++){
 }
  return inP - outP
 }
+=====================
+OR
+=====================
+var number = function(busStops){
+let inP = 0;
+let outP = 0;
+  for(let i = 0; i < busStops.length; i++){
+      inP += busStops[i][0];
+      outP += busStops[i][1];
+    }
+  return (inP - outP)
+}
 
 ==========================================================
+
