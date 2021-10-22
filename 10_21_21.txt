@@ -1,6 +1,30 @@
-www.codewars.com/kata/5a2b703dc5e2845c0900005a/train/javascript
+www.codewars.com/kata/5a2b703dc5e2845c0900005a
 function isDivideBy(number, a, b) {
   return number % a === 0 && number % b === 0 ? true : false
 }
 
 ==================================================================
+www.codewars.com/kata/55afed09237df73343000042
+function isLucky(n) {
+let d7 = n % 10;
+let n6 = (n - d7) / 10;
+let d6 = n6 % 10;
+let n5 = (n6 - d6)/ 10;
+let d5 = n5 % 10;
+let n4 = (n5 - d5)/ 10;
+let d4 = n4 % 10;
+let n3 = (n4 - d4)/ 10;
+let d3 = n3 % 10;
+let n2 = (n3 - d3)/ 10;
+let d2 = n2 % 10;
+let n1 = (n2 - d2)/ 10;
+let d1 = n1 / 1; 
+let sumDigits = d1 + d2 + d3 + d4 + d5 + d6 + d7;
+  if (sumDigits === 0 || sumDigits % 9 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+====================================================================
