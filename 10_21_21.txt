@@ -28,3 +28,18 @@ let sumDigits = d1 + d2 + d3 + d4 + d5 + d6 + d7;
 }
 
 ====================================================================
+www.codewars.com/kata/55cbd4ba903825f7970000f5
+function getGrade (s1, s2, s3) {
+  let averageScore = (s1 + s2 + s3) / 3;
+  if (averageScore >= 90 && averageScore <= 100) {
+    return "A";
+  } else if (averageScore >= 80 && averageScore < 90) {
+    return "B";
+  } else if (averageScore >= 70 && averageScore < 80) {
+    return "C";
+  } else if (averageScore >= 60 && averageScore < 70) {
+    return "D";
+  } else return "F";
+}
+
+====================================================================
