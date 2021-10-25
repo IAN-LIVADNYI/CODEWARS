@@ -153,4 +153,17 @@ function maxDiff(list) {
 }
 
 ==================================================================
+www.codewars.com/kata/how-good-are-you-really
+function betterThanAverage(classPoints, yourPoints) {
+  let sum = 0;
+  let i = 0;
+  while(i < classPoints.length){
+    sum += classPoints[i];
+    i++
+  }
+  return ((sum + yourPoints)/ (classPoints.length + 1)) < yourPoints ? true : false 
+}
+
+=======================================================================================
+
 
