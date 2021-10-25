@@ -132,5 +132,25 @@ var max = function(list){
 }
 
 =================================================================
+www.codewars.com/kata/588a3c3ef0fbc9c8e1000095
+function maxDiff(list) {
+  if (list.length < 2) {
+    return 0;
+  }  
+  let biggest = list[0];
+  let smallest = list[0];
+  for(let i = 0; i < list.length; i++){
+    if (list[i] > biggest){
+     biggest = list[i];
+    } 
+    if (list[i] < smallest){
+     smallest = list[i];
+    }
+  } 
+  console.log(Math.abs(biggest - smallest))
+  console.log(list)
+  return biggest - smallest;
+}
 
+==================================================================
 
