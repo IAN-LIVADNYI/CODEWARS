@@ -110,4 +110,27 @@ function sumArray(array) {
 }
 
 ===========================================================
+www.codewars.com/kata/find-maximum-and-minimum-values-of-a-list
+var min = function(list){
+  let mini = list[0];
+    for(let i = 0; i < list.length; i++){
+      if(mini >= list[i]){
+        mini = list[i];
+      }
+    }
+    return mini;
+}
+
+var max = function(list){
+   let maxi = list[0];
+   for(let i = 0; i < list.length; i++){
+     if(maxi <= list[i]){
+       maxi = list[i];
+     }
+   }
+    return maxi;
+}
+
+=================================================================
+
 
