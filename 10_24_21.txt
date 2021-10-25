@@ -21,3 +21,14 @@ function sum (numbers) {
 };
 
 ===================================================
+www.codewars.com/kata/filling-an-array-part-1
+function arr(N){ 
+let newAr = [];
+for(N = N-1; N > -1;N--){
+  newAr.unshift(N)
+}
+  return newAr;
+}
+
+====================================================
+
