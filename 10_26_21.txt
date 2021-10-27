@@ -41,3 +41,22 @@ return false;
 return true;
 }
 ================================================================================
+www.codewars.com/kata/525f50e3b73515a6db000b83
+function createPhoneNumber(numbers){
+  let phoneNumber = '(';
+  for(let i = 0; i < numbers.length; i++ ){
+    if(i !== 3 && i !== 6) phoneNumber += numbers[i];
+    if(i === 3) {
+      phoneNumber += ') ' + numbers[i];
+      continue;
+    }
+    
+    if(i === 6) {
+      phoneNumber += '-' + numbers[i];
+      continue;
+    }
+  }
+return phoneNumber;
+ }
+
+================================================================================
