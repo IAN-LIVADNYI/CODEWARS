@@ -31,3 +31,13 @@ function revers(string){
 }
 
 ================================================================================
+www.codewars.com/kata/is-every-value-in-the-array-an-array
+function arrCheck (value) {
+for (let i = 0; i < value.length; i++){
+if (Array.isArray(value[i]) !== true){
+return false;
+}
+}
+return true;
+}
+================================================================================
