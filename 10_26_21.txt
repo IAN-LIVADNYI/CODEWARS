@@ -19,3 +19,15 @@ function returnPairs (arr){
 console.log(returnPairs (arr));
 
 ===============================================================================
+//3.1 Напишите функцию, которая получает имя и выводит 
+//    его в обратном порядке
+
+function revers(string){
+  let newString = '';
+  for(let i = string.length-1;i >= 0;i--){
+    newString += string[i];
+  };
+     return newString;
+}
+
+================================================================================
