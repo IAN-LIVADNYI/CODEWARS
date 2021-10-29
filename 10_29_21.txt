@@ -10,3 +10,28 @@ function fahrenheitToCelcius(tempF){
 console.log(fahrenheitToCelcius(37));
 
 =================================================================================================
+// Функция - calculator
+// принимает два числа a, b и операцию operation (+, -, *, /)
+// и возвращает результат выполнения операции над числами или сообщение об
+// ошибке в случае некорректной операции или деления на ноль
+
+function calculator(a,b,operation){
+  if(operation !== "*" && operation !== "-" && operation !== "/" && operation !== "+")
+    return 'Incorrect input of an operator'
+  if(b === 0 || b === null || Number.isNaN(b) === true || typeof b !== 'number')
+    return 'Error. Check the data you put in. You cannot divide by 0'
+let result;    
+  switch(operation){
+    case '+': result = a + b;
+      break;
+    case '-': result = a - b;
+      break;
+    case '/': result = a / b;
+      break;
+    case '*': result = a * b;
+      break;
+  }
+  return result;
+}
+
+===================================================================================================
