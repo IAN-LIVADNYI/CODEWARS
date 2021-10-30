@@ -61,6 +61,18 @@ let arr = [0,1];
 }
 
 =============================================================================
+www.codewars.com/kata/52549d3e19453df56f0000fe
+function fib(n){
+  if(n === 1) return 0;
+  if(n === 2) return 1;
+  let arr = [0,1];
+  for(i = 0; i < n - 2; i++){
+    arr.push(arr[arr.length - 1] + arr[arr.length - 2])
+  }
+  return arr[arr.length-1]
+}
+
+===============================================================================
 
 
 
