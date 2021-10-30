@@ -31,3 +31,39 @@ function isBrakets(s){
 }
 
 ===========================================================================
+www.codewars.com/kata/5aa39ba75084d7cf45000008
+function solve(n){
+let str = '';
+  let f0 = '0';
+  let f1 = '01';
+  if(n === 0) str += f0;
+  if(n === 1) str += f1
+  if(n > 1){
+    let arr = ['0','01'];
+    for(let i = 0; i < n-1; i++) {
+    arr.push(arr[arr.length - 1].toString() + arr[arr.length - 2].toString())
+    }
+    str += arr[arr.length-1]; 
+    return str
+  }
+  return str
+}
+
+=============================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
