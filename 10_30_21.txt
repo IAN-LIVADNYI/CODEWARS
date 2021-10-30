@@ -73,17 +73,7 @@ function fib(n){
 }
 
 ===============================================================================
-www.codewars.com/kata/5b4e779c578c6a898e0005c5
-function drawStairs(n) {
-  let output = '';
-  let space = ' ';
-  for(let i = 1; i<n; i++){
-    output += '\n' + space.repeat(i) + 'I';
-  }
-  return ('I' + output);
-}
 
-==============================================================================
 
 
 
