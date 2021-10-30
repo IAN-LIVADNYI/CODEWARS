@@ -11,3 +11,23 @@ let arr = [0,1];
 console.log(lineFibo(35));
 
 ==========================================================================
+// Функция isBrakets, которая принимает строку s, 
+// содержащую скобки '[]', проверяет правильность расстановки скобок. 
+// Возвращает 'valid' or 'invalid'		
+// console.log(isBalanced('[][][[]]')); // valid
+// console.log(isBalanced('[[[[]]]][[[]]][[]][]')); // valid  
+// console.log(isBalanced('[]][[[]]')); // invalid 
+// console.log(isBalanced('][[[]][][')); // invalid
+
+function isBrakets(s){
+  let right = 0;
+  let left = 0;
+  for(let i = 0; i < s.length; i++){
+    if (s[i] === '[') right += 1
+    if (s[i] === ']') left += 1
+    if (left > right) return 'invalid'
+  }
+  return right === left ? 'valid' : 'invalid'
+}
+
+===========================================================================
