@@ -111,6 +111,23 @@ let res = number * number;
 };
 
 =======================================================
+www.codewars.com/kata/55225023e1be1ec8bc000390
+function greet(name){  
+  if(name === "Johnny")
+    return "Hello, my love!";
+  return "Hello, " + name + "!";
+}
+
+========================================================
+www.codewars.com/kata/58649884a1659ed6cb000072
+function updateLight(current) {
+  let cycl = ['red','green','yellow','red']
+for(let i = 0;i < cycl.length;i++){
+  if(current === cycl[i]) return cycl[i +1]
+}
+}
+
+=======================================================
 
 
 
