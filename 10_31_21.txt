@@ -159,7 +159,13 @@ function fixTheMeerkat(arr) {
  newArr[1] = arr[1];
   return newArr
 }
-======
+=====
+OR
+=====
+function fixTheMeerkat(arr) {
+ let newArr = [arr[2], arr[1], arr[0]];
+  return newArr;
+}
 
 
 
