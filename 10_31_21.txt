@@ -151,6 +151,16 @@ return indWolf === queue.length-1 ? 'Pls go away and stop eating my sheep' : `Oi
 }
 
 ======================================================
+www.codewars.com/kata/56f699cd9400f5b7d8000b55
+function fixTheMeerkat(arr) {
+ let newArr = [];
+ newArr[0] = arr[2];
+ newArr[2] = arr[0];
+ newArr[1] = arr[1];
+  return newArr
+}
+======
+
 
 
 
