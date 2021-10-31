@@ -42,3 +42,29 @@ function lovefunc(flower1, flower2){
 }
 
 ======================================================
+www.codewars.com/kata/5865918c6b569962950002a1
+function strCount(str, letter){ 
+  let counter=0; 
+  for(let i=0; i < str.length; i++)
+  {
+    if(str[i]===letter)
+    {
+      counter+=1;
+    }
+  }
+
+  return counter;
+}
+
+======================================================
+www.codewars.com/kata/50654ddff44f800200000007
+function solution(a, b){
+  let str = '';
+  if (a.length > b.length){
+  return str += b + a + b
+  } else {
+    return str += a + b + a
+     }
+  }
+
+=======================================================
