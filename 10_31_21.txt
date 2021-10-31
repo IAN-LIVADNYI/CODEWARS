@@ -128,6 +128,12 @@ for(let i = 0;i < cycl.length;i++){
 }
 
 =======================================================
+www.codewars.com/kata/545991b4cbae2a5fda000158
+function include(arr, item){
+  return arr.includes(item) ? true : false;
+}
+
+=======================================================
 
 
 
