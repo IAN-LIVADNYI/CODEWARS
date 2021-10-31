@@ -144,6 +144,13 @@ www.codewars.com/kata/57cc975ed542d3148f00015b
 const check = (a, x) => a.includes(x)
 
 =======================================================
+www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15
+function warnTheSheep(queue) {
+let indWolf = queue.findIndex(el => el === 'wolf')
+return indWolf === queue.length-1 ? 'Pls go away and stop eating my sheep' : `Oi! Sheep number ${queue.length - indWolf - 1}! You are about to be eaten by a wolf!`
+}
+
+======================================================
 
 
 
