@@ -31,3 +31,18 @@ function isReallyNaN(val) {
 }
 
 ========================================================================
+www.codewars.com/kata/57d448c6ba30875437000138
+function roots(a,b,c) {
+  let d = (b ** 2) - (4 * a * c);
+  let x = (-b + Math.sqrt(d)) / (2 * a);
+  let xx = (-b - Math.sqrt(d)) / (2 * a);
+  let u = (a * (x**2) + (b * x + c));
+  let sum = (x + xx)
+  if (d >= 0) {
+    return +sum.toFixed(2);
+   } else {
+       return null 
+    }
+  }
+
+=========================================================================
