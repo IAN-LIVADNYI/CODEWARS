@@ -25,3 +25,9 @@ function printArray(array){
 }
 
 ========================================================================
+www.codewars.com/kata/56c24c58e0c0f741d4001aef
+function isReallyNaN(val) {  
+  return Number.isNaN(val) ? true : false;
+}
+
+========================================================================
