@@ -60,3 +60,11 @@ function giveMeFive(obj){
 }
 
 ======================================================================
+www.codewars.com/kata/571b6a4a7beb0a8ade0007a8
+ function bloodAlcoholContent(drinks, weight, sex, time){
+   let men = (drinks.ounces * drinks.abv * ((5.14 / weight) * 0.73)) - 0.015 * time
+   let women = (drinks.ounces * drinks.abv * ((5.14 / weight) * 0.66)) - 0.015 * time
+  return (sex === 'male') ? +men.toFixed(4) : +women.toFixed(4)
+}
+
+=============================================================================
