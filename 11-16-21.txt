@@ -40,3 +40,31 @@ function greet(language) {
 }
 
 ========================================================================================================
+www.codewars.com/kata/582e0e592029ea10530009ce
+function duckDuckGoose(players, goose) {
+console.log(players)
+console.log(goose)
+let q;
+if(goose % players.length === 0){
+  q = players.length;
+  for(let i = 0; i < players.length; i++){
+if(i === q-1) return players[i].name
+};
+};
+  
+if(goose > players.length){
+  q = goose % players.length   //* ((goose.toString()[0]) * 1);
+  for(let i = 0; i < players.length; i++){
+if(i === q-1) return players[i].name
+};
+};  
+  
+  if(goose < players.length){
+  q = goose;
+  for(let i = 0; i < players.length; i++){
+if(i === q-1) return players[i].name
+};
+};
+  };
+
+====================================================================
