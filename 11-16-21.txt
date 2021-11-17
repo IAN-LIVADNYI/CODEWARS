@@ -1,0 +1,11 @@
+www.codewars.com/kata/57d001b405c186ccb6000304
+function iTri(s){
+  if (s === 0) return "Starting Line... Good Luck!";
+  if (s >= (2.4 + 112 + 26.2)) return 'You\'re done! Stop running!'
+  if (s >= (2.4 + 112 + 26.2 - 10)) return {Run: 'Nearly there!'};
+  if (s < 2.4) return {Swim: `${(2.4 + 112 + 26.2 - s).toFixed(2) * 1}0 to go!`};
+  if (s < 2.4 + 112) return {Bike: `${(2.4 + 112 + 26.2 - s + 0.001).toFixed(2) * 1}0 to go!`};
+  if (s < 2.4 + 112 + 26.2 - 10) return {Run: `${(2.4 + 112 + 26.2 - s).toFixed(2) * 1}0 to go!`};
+}
+
+====================================================================================================
