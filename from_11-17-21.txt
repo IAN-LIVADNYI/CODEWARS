@@ -23,3 +23,22 @@ var makeBackronym = function(string){
 };
 
 ===========================================================================
+www.codewars.com/kata/make-a-function-that-does-arithmetic
+function arithmetic(a, b, operator){
+  let obj = {
+    add: a + b,
+    subtract: a - b,
+    multiply: a * b,
+    divide: a / b,
+  }
+  return obj[operator]
+}
+
+===========================================================================
+www.codewars.com/kata/check-three-and-two
+function checkThreeAndTwo(array){
+  let a = array.filter(el => el === 'a').length;
+  let b = array.filter(el => el === 'b').length;
+  let c = array.filter(el => el === 'c').length;
+  return (a === 3 || b === 3 || c === 3) && (a === 2 || b === 2 || c === 2) ? true : false
+}
