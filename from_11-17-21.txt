@@ -14,3 +14,12 @@ return {...res}
 }
 
 ===========================================================================
+date: 11-20-21
+==============
+www.codewars.com/kata/makebackronym
+var makeBackronym = function(string){
+  let newString = string.toUpperCase().split('').map(el => dict[el]).join(' ');
+  return newString;
+};
+
+===========================================================================
