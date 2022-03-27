@@ -1,6 +1,66 @@
 
 date: 3-27-22
 ==============
+https://www.codewars.com/kata/5809508cc47d327c12000084/train/sql
+SELECT * FROM people WHERE age > 50 ORDER BY age DESC;
+
+=================================================================
+
+https://www.codewars.com/kata/58110da0009b4f7ef80000ad/train/sql
+select SUM(age) as age_sum FROM people
+
+==================================================================
+
+https://www.codewars.com/kata/58111670e10b53be31000108/train/sql
+select DISTINCT age FROM people;
+
+===================================================================
+
+https://www.codewars.com/kata/582365c18917435ab3000020/train/sql
+select  custid, custname, custstate FROM customers
+
+===================================================================
+
+https://www.codewars.com/kata/590a95eede09f87472000213/train/sql
+select * from users where age >= 18;
+
+===================================================================
+
+https://www.codewars.com/kata/590ba881fe13cfdcc20001b4/train/sql
+select * from travelers where country NOT IN ('Canada','Mexico', 'USA');
+
+===================================================================
+
+https://www.codewars.com/kata/590cc86f7557c0494000007e/train/sql
+INSERT INTO participants VALUES('Ian', 39, true);
+SELECT * FROM participants;
+
+====================================================================
+
+https://www.codewars.com/kata/5910b0d378cc2ba91400000b/train/sql
+select * from students
+WHERE tuition_received is false;
+
+====================================================================
+
+https://www.codewars.com/kata/593ed37c93350098d600001d/train/sql
+select * from companies
+order by (employees) desc;
+
+=====================================================================
+
+https://www.codewars.com/kata/594800ba6fb152624300006d/train/sql
+select id, name, birthday, LOWER(race) AS race FROM demographics;
+OR
+select *, LOWER(race) AS race FROM demographics;
+
+======================================================================
+
+https://www.codewars.com/kata/594a50bafd3b7031c1000013/train/sql
+select to_HEX (legs) as legs, to_HEX (arms) AS arms from monsters;
+
+=======================================================================
+
 https://www.codewars.com/kata/594a6133704e4daf5d00003d/train/sql
 select FLOOR(number1) AS number1, CEILING(number2) AS number2 FROM decimals;
 
