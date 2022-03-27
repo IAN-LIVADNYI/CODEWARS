@@ -1,3 +1,11 @@
+
+date: 3-27-22
+==============
+https://www.codewars.com/kata/594a9592704e4d21bc000131
+select number1 % number2 AS mod FROM decimals;
+
+=========================================================================
+
 date: 11-20-21
 ==============
 www.codewars.com/kata/makebackronym
