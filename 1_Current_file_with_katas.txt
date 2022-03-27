@@ -1,6 +1,30 @@
 
 date: 3-27-22
 ==============
+https://www.codewars.com/kata/590ba881fe13cfdcc20001b4/train/sql
+select * from travelers
+where country NOT IN ('Canada','Mexico', 'USA');
+
+===================================================================
+
+https://www.codewars.com/kata/590cc86f7557c0494000007e/train/sql
+INSERT INTO participants VALUES('Ian', 39, true);
+SELECT * FROM participants;
+
+====================================================================
+
+https://www.codewars.com/kata/5910b0d378cc2ba91400000b/train/sql
+select * from students
+WHERE tuition_received is false;
+
+====================================================================
+
+https://www.codewars.com/kata/593ed37c93350098d600001d/train/sql
+select * from companies
+order by (employees) desc;
+
+=====================================================================
+
 https://www.codewars.com/kata/594800ba6fb152624300006d/train/sql
 select id, name, birthday, LOWER(race) AS race FROM demographics;
 OR
