@@ -1,6 +1,19 @@
 
 date: 3-27-22
 ==============
+https://www.codewars.com/kata/5c0ae69d5f72394e130025f6/train/sql
+SELECT name, greeting, SUBSTRING(greeting, '#([0-9]+)') AS user_id FROM greetings;
+
+==============================================================
+
+https://www.codewars.com/kata/5e5f09dc0a17be0023920f6f/train/sql
+select capital FROM countries
+WHERE continent IN ('Africa', 'Afrika') AND country LIKE 'E%'
+ORDER BY capital
+LIMIT 3;
+
+================================================================
+
 https://www.codewars.com/kata/5809508cc47d327c12000084/train/sql
 SELECT * FROM people WHERE age > 50 ORDER BY age DESC;
 
