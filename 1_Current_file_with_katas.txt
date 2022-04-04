@@ -1,3 +1,14 @@
+date: 4-04-22
+==============
+https://www.codewars.com/kata/5ac698cdd325ad18a3000170/train/sql
+SELECT name, SUM(won) as won, SUM(lost) as lost FROM fighters
+JOIN winning_moves ON fighters.move_id = winning_moves.id
+WHERE move NOT IN('Hadoken', 'Shouoken', 'Kikoken')
+GROUP BY name
+ORDER BY won DESC
+LIMIT 6
+
+=================================================================
 date: 3-29-22
 ==============
 https://www.codewars.com/kata/5ad90fb688a0b74111000055/train/sql
