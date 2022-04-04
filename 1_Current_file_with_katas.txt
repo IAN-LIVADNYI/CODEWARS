@@ -1,5 +1,13 @@
 date: 4-04-22
 ==============
+https://www.codewars.com/kata/5abcf0f930488ff1a6000b66/train/sql
+SELECT id, name, quality1, quality2 FROM students
+WHERE quality1 IN ('studious', 'hufflepuff') OR quality2 in ('intelligent', 'hufflepuff')
+OR (quality1='evil' AND quality2='cunning')
+OR (quality1='brave' AND quality2 != 'evil')
+ORDER BY id ASC;
+
+=================================================================
 https://www.codewars.com/kata/5ac698cdd325ad18a3000170/train/sql
 SELECT name, SUM(won) as won, SUM(lost) as lost FROM fighters
 JOIN winning_moves ON fighters.move_id = winning_moves.id
