@@ -1,5 +1,12 @@
-date: 4-04-22
+date: 4-06-22
 ==============
+https://www.codewars.com/kata/5ab7a736edbcfc8e62000007/train/sql
+SELECT senshi_name AS sailor_senshi, real_name_jpn AS real_name, school AS school, name AS cat FROM sailorsenshi s
+LEFT JOIN cats c ON s.cat_id = c.id
+LEFT JOIN schools sch ON s.school_id = sch.id;
+
+=================================================================
+
 https://www.codewars.com/kata/5ab828bcedbcfc65ea000099/train/sql
 SELECT pokemon_name, (str * multiplier) AS modifiedStrength, element
 FROM pokemon
