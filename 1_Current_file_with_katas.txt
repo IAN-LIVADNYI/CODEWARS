@@ -1,5 +1,16 @@
 date: 4-04-22
 ==============
+https://www.codewars.com/kata/5ab828bcedbcfc65ea000099/train/sql
+SELECT pokemon_name, (str * multiplier) AS modifiedStrength, element
+FROM pokemon
+JOIN multipliers ON pokemon.element_id = multipliers.id
+WHERE (str * multiplier) >= 40
+ORDER BY modifiedStrength DESC;
+
+===============================================================
+
+date: 4-04-22
+==============
 https://www.codewars.com/kata/5abcf0f930488ff1a6000b66/train/sql
 SELECT id, name, quality1, quality2 FROM students
 WHERE quality1 IN ('studious', 'hufflepuff') OR quality2 in ('intelligent', 'hufflepuff')
