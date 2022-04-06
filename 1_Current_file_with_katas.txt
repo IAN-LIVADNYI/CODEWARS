@@ -7,6 +7,14 @@ JOIN multipliers ON pokemon.element_id = multipliers.id
 WHERE (str * multiplier) >= 40
 ORDER BY modifiedStrength DESC;
 
+OR
+
+SELECT pokemon_name, str * multiplier AS modifiedStrength, element
+FROM pokemon p
+FULL JOIN multipliers m ON p.element_id = m.id
+WHERE str * multiplier >= 40
+ORDER BY modifiedStrength DESC;
+
 ===============================================================
 
 date: 4-04-22
