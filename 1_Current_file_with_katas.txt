@@ -1,3 +1,35 @@
+date: 4-08-22
+==============
+https://www.codewars.com/kata/594a8fa5a2db9e5f290000c3/train/sql
+SELECT TRUNC(number1 + number2) AS towardzero FROM decimals;
+
+===============================================================
+
+https://www.codewars.com/kata/594a8f653b5b4e8f3d000035/train/sql
+SELECT POW(number1, number2) AS result FROM decimals;
+
+===============================================================
+
+https://www.codewars.com/kata/594a8f2f7ca3c692a4000041/train/sql
+SELECT ABS(number1) AS abs, LOG(64, number2) AS log
+FROM decimals LIMIT 100;
+
+===============================================================
+
+https://www.codewars.com/kata/59cb550486a6fd10b50000ad/train/sql
+SELECT number FROM numbers
+ORDER BY RANDOM();
+
+================================================================
+
+https://www.codewars.com/kata/595a3ba3843b0cbf8e000004/train/sql
+SELECT
+CASE WHEN SUM(number1)%2=0 THEN MAX(number1) ELSE MIN(number1) END AS number1,
+CASE WHEN SUM(number2)%2=0 THEN MAX(number2) ELSE MIN(number2) END AS number2
+FROM numbers;
+
+================================================================
+
 date: 4-06-22
 ==============
 https://www.codewars.com/kata/5ab7a736edbcfc8e62000007/train/sql
