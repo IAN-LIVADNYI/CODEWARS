@@ -1,5 +1,11 @@
 date: 4-08-22
 ==============
+https://www.codewars.com/kata/594a8f2f7ca3c692a4000041/train/sql
+SELECT ABS(number1) AS abs, LOG(64, number2) AS log
+FROM decimals LIMIT 100;
+
+===============================================================
+
 https://www.codewars.com/kata/59cb550486a6fd10b50000ad/train/sql
 SELECT number FROM numbers
 ORDER BY RANDOM();
