@@ -1,3 +1,11 @@
+date: 4-08-22
+==============
+https://www.codewars.com/kata/59cb550486a6fd10b50000ad/train/sql
+SELECT number FROM numbers
+ORDER BY RANDOM();
+
+================================================================
+
 date: 4-06-22
 ==============
 https://www.codewars.com/kata/5ab7a736edbcfc8e62000007/train/sql
