@@ -1,3 +1,11 @@
+date: 4-09-22
+==============
+https://www.codewars.com/kata/594a6ad320ac16a54400007f/train/sql
+SELECT CBRT(number1) AS cuberoot, LN(number2) AS logarithm FROM decimals;
+
+==============================================================
+
+
 date: 4-08-22
 ==============
 https://www.codewars.com/kata/594a8fa5a2db9e5f290000c3/train/sql
