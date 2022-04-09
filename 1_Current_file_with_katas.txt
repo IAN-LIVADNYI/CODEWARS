@@ -4,7 +4,17 @@ https://www.codewars.com/kata/594a6ad320ac16a54400007f/train/sql
 SELECT CBRT(number1) AS cuberoot, LN(number2) AS logarithm FROM decimals;
 
 ==============================================================
+https://www.codewars.com/kata/594a389387a7c6a77a000005/train/sql
+SELECT
+  length(CAST(name AS varchar)) AS id,
+  length(CAST(legs AS varchar)) AS name,
+  length(CAST(arms AS varchar)) AS legs,
+  length(CAST(characteristics AS varchar)) AS arms,
+  length(CAST(id AS varchar)) AS characteristics
 
+FROM monsters
+
+=================================================================
 
 date: 4-08-22
 ==============
