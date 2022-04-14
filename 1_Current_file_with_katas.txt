@@ -1,5 +1,19 @@
 date: 4-12-22
 ==============
+https://www.codewars.com/kata/545af3d185166a3dec001190/train/javascript
+function eachCons(array, n) {
+    let arrNew = [];
+    for(let k = 0; k < array.length-n+1; k++){
+        let littleArr = []
+        for(let i = k; i < n+k; i++){
+            littleArr.push(array[i])
+        }
+        arrNew.push(littleArr)
+    }
+    return arrNew;
+}
+========================================================================
+
 https://www.codewars.com/kata/5dd462a573ee6d0014ce715b/train/javascript
 function sameCase(a, b){
   if(a.toLowerCase() === a.toUpperCase() || b.toLowerCase() === b.toUpperCase()) return -1;
