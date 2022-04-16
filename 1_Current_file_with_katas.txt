@@ -1,3 +1,29 @@
+date: 4-16-22
+==============
+https://www.codewars.com/kata/5713bc89c82eff33c60009f7/train/javascript
+function toFreud(string) {
+    let result = "";
+    if (string.length === 0) return result;
+    let arr = string.split(' ').length
+    let i = 1;
+    do
+    {result += 'sex ';
+        i++}
+    while (i<=arr)
+    return result.trim();
+}
+
+OR
+
+function toFreud(string) {
+  if(string.length === 0) return "";
+    let array = string.split(' ');
+    let newString = "";
+    array.forEach(el => newString += "sex ")
+    return newString.trim();
+}
+
+==========================================================================
 date: 4-12-22
 ==============
 https://www.codewars.com/kata/545af3d185166a3dec001190/train/javascript
