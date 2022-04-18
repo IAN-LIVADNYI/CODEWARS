@@ -1,5 +1,17 @@
 date: 4-16-22
 ==============
+https://www.codewars.com/kata/557cd6882bfa3c8a9f0000c1/train/javascript
+function getAge(inputString){
+return +inputString[0];
+}
+
+OR
+
+const getAge = inputString => +inputString[0];
+
+=========================================================================
+date: 4-16-22
+==============
 https://www.codewars.com/kata/5713bc89c82eff33c60009f7/train/javascript
 function toFreud(string) {
     let result = "";
