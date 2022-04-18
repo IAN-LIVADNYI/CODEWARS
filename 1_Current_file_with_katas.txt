@@ -35,6 +35,12 @@ const countSheep = num => {
   return murmur;
 }
 
+=======================================================================
+https://www.codewars.com/kata/57e76bc428d6fbc2d500036d/train/javascript
+const stringToArray = s => s.split(" ");
+
+========================================================================
+
 date: 4-16-22
 ==============
 https://www.codewars.com/kata/5713bc89c82eff33c60009f7/train/javascript
