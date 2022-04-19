@@ -1,4 +1,18 @@
-date: 4-16-22
+date: 4-18-22
+==============
+https://www.codewars.com/kata/58f8a3a27a5c28d92e000144/train/javascript
+const firstNonConsecutive = arr => {
+for(let i = 0; i < arr.length-1; i++){
+  if(arr[i]+1 !== arr[i+1]){
+     return arr[i+1];
+    }
+}
+return null;
+}
+
+=======================================================================
+
+date: 4-17-22
 ==============
 https://www.codewars.com/kata/557cd6882bfa3c8a9f0000c1/train/javascript
 function getAge(inputString){
