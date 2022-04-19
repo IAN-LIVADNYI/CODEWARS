@@ -1,5 +1,18 @@
 date: 4-18-22
 ==============
+const split = str => {
+    let newArr = str.split('');
+    let ARR = [];
+    for(let i = 0; i < newArr.length; i = i + 2){
+        let smallStr = '';
+        smallStr += newArr[i] + newArr[i+1]
+        ARR.push(smallStr)
+    }
+    return ARR;
+}
+console.log(split('rabcdkflgghfkety'))
+
+==========================================================================
 https://www.codewars.com/kata/58f8a3a27a5c28d92e000144/train/javascript
 const firstNonConsecutive = arr => {
 for(let i = 0; i < arr.length-1; i++){
