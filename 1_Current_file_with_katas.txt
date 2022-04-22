@@ -1,5 +1,12 @@
-date: 4-18-22
+date: 4-21-22
 ==============
+https://www.codewars.com/kata/594900e16fd782a607000059/train/sql
+SELECT id, bit_length(name) AS name, birthday, bit_length(race)AS race
+FROM demographics;
+
+=========================================================================
+
+
 const split = str => {
     let newArr = str.split('');
     let ARR = [];
