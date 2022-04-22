@@ -1,5 +1,21 @@
 date: 4-21-22
 ==============
+https://www.codewars.com/kata/5943b797d8c9432eb7000066/train/sql
+SELECT
+ md5 || REPEAT('1', CHAR_LENGTH(sha256)-CHAR_LENGTH(md5)) AS md5,
+REPEAT('0', CHAR_LENGTH(sha256)-CHAR_LENGTH(sha1)) || sha1 AS sha1,
+sha256
+FROM encryption
+
+OR
+
+SELECT
+CONCAT(md5, REPEAT('1', CHAR_LENGTH(sha256)-CHAR_LENGTH(md5))) AS md5,
+CONCAT(REPEAT('0', CHAR_LENGTH(sha256)-CHAR_LENGTH(sha1)), sha1) AS sha1,
+sha256
+FROM encryption
+=====================================================================
+
 https://www.codewars.com/kata/59440034e94fae05b2000073/train/sql
 SELECT CONCAT(prefix, ' ', first, ' ', last, ' ', suffix) AS title
 FROM names;
