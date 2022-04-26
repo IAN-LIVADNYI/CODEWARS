@@ -8,8 +8,14 @@
 
 
 const ascendantArr = str => {
-let arr = new Set(str.split('').sort());
-console.log(arr)
+let arr = (str.split('').sort());
+let res = [];
+for (let i = 0; i < arr.length; i++){
+    if(arr[i] !== arr[i + 1]){
+        res.push(arr[i])
+    }
+}
+return (res)
 };
 
-ascendantArr('fshsklooejebcijbckclsmsbssllltuwopdaaaaqqnabzvxxpa')
+console.log(ascendantArr('fshsklooejebcijbckclsmsbssllltuwopdaaaaqqnabzvxxpa'))
