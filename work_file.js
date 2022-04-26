@@ -5,22 +5,11 @@
 // console.log(findFirstDuplicate(arr))
 //
 //
-//
-//
-// let str = ['fshsklooejebcijbckclsmsbssllltuwopqqnabzvxxp']
-// const ascendantArr = str =>{
-//
-// };
 
-function mergeArrays(arr1, arr2) {
-   let newArr = [...arr1].concat(...arr2).sort((a,b) => a-b);
-   let resArr = [];
-   for(let i = 0; i < newArr.length; i++){
-      if(newArr[i] !== newArr[i + 1]){
-         resArr.push(newArr[i])
-      }
-   }
-   return resArr;
-}
-console.log(mergeArrays([2, 2, 8, 2, 2, 2], [1, 8, 1]))
 
+const ascendantArr = str => {
+let arr = new Set(str.split('').sort());
+console.log(arr)
+};
+
+ascendantArr('fshsklooejebcijbckclsmsbssllltuwopdaaaaqqnabzvxxpa')
