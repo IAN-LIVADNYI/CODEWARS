@@ -12,17 +12,15 @@
 //
 // };
 
-
 function mergeArrays(arr1, arr2) {
    let newArr = [...arr1].concat(...arr2).sort((a,b) => a-b);
    let resArr = [];
-   // for(let i = 0; i < newArr.length; i++){
-   //    if(newArr.lastIndexOf(i) === newArr.indexOf(i)){
-   //       resArr.push(newArr[i])
-   //    }
-   // }
-   return newArr;
-   // return resArr;
+   for(let i = 0; i < newArr.length; i++){
+      if(newArr[i] !== newArr[i + 1]){
+         resArr.push(newArr[i])
+      }
+   }
+   return resArr;
 }
-console.log( mergeArrays([8, 2, 8, 4, 5], [6, 1, 8, 9, 10]))
+console.log(mergeArrays([2, 2, 8, 2, 2, 2], [1, 8, 1]))
 
