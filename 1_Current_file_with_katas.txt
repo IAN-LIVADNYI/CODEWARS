@@ -1,5 +1,39 @@
+date: 4-25-22
+==============
+function mergeArrays(arr1, arr2) {
+   let newArr = [...arr1].concat(...arr2).sort((a,b) => a-b);
+   let resArr = [];
+  let modalArr = [];
+   for(let i = 0; i < newArr.length; i++){
+      if(newArr.lastIndexOf(newArr[i]) === newArr.indexOf(newArr[i])){
+         resArr.push(newArr[i])
+      } else resArr.push(newArr[i])
+      continue;
+                    }
+   console.log(newArr, resArr, modalArr);
+}
+mergeArrays([8, 2, 8, 4, 5], [6, 1, 2, 8, 9, 10])
+
+==============================================================================
+
 date: 4-21-22
 ==============
+https://www.codewars.com/kata/5943b797d8c9432eb7000066/train/sql
+SELECT
+ md5 || REPEAT('1', CHAR_LENGTH(sha256)-CHAR_LENGTH(md5)) AS md5,
+REPEAT('0', CHAR_LENGTH(sha256)-CHAR_LENGTH(sha1)) || sha1 AS sha1,
+sha256
+FROM encryption
+
+OR
+
+SELECT
+CONCAT(md5, REPEAT('1', CHAR_LENGTH(sha256)-CHAR_LENGTH(md5))) AS md5,
+CONCAT(REPEAT('0', CHAR_LENGTH(sha256)-CHAR_LENGTH(sha1)), sha1) AS sha1,
+sha256
+FROM encryption
+=====================================================================
+
 https://www.codewars.com/kata/59440034e94fae05b2000073/train/sql
 SELECT CONCAT(prefix, ' ', first, ' ', last, ' ', suffix) AS title
 FROM names;
