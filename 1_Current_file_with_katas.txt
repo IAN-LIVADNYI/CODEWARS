@@ -1,19 +1,65 @@
+date: 4-26-22
+==============
+let arr = [1,2,6,8,6,8,9,5,4,6,5,3,9,4,4,5,4,5,8,9,5,6,3,5,4,7,5,6,3,3,10];
+function findFirstDuplicate(arr){
+    for(let i = 0; i < arr.length; i++){
+        for(let k = i+1; k < arr.length; k++){
+            if(arr[i] === arr[k]) return arr[k];
+        }
+    }
+return "no doubles";
+};
+console.log(findFirstDuplicate(arr))
+
+====================================================================
+const ascendantArr = str => {
+let arr = new Set(str.split('').sort());
+console.log(arr)
+};
+
+ascendantArr('fshsklooejebcijbckclsmsbssllltuwopdaaaaqqnabzvxxpa')
+
+//OR
+
+const ascendantArr = str => {
+let arr = (str.split('').sort());
+let res = [];
+for (let i = 0; i < arr.length; i++){
+    if(arr[i] !== arr[i + 1]){
+        res.push(arr[i])
+    }
+}
+return (res)
+};
+
+console.log(ascendantArr('fshsklooejebcijbckclsmsbssllltuwopdaaaaqqnabzvxxpa'))
+
+===================================================================
 date: 4-25-22
 ==============
 function mergeArrays(arr1, arr2) {
    let newArr = [...arr1].concat(...arr2).sort((a,b) => a-b);
    let resArr = [];
-  let modalArr = [];
    for(let i = 0; i < newArr.length; i++){
-      if(newArr.lastIndexOf(newArr[i]) === newArr.indexOf(newArr[i])){
+      if(newArr[i] !== newArr[i + 1]){
          resArr.push(newArr[i])
-      } else resArr.push(newArr[i])
-      continue;
-                    }
-   console.log(newArr, resArr, modalArr);
+      }
+   }
+   return resArr;
 }
-mergeArrays([8, 2, 8, 4, 5], [6, 1, 2, 8, 9, 10])
+console.log(mergeArrays([2, 2, 8, 2, 2, 2], [1, 8, 1]))
 
+OR
+
+function mergeArrays(arr1, arr2) {
+  return Array.from(new Set([...arr1,...arr2].sort((a,b) => a-b)))
+}
+
+OR
+
+function mergeArrays(arr1, arr2) {
+  return Array.from(new Set(arr1.concat(arr2).sort((a,b) => a-b)))
+}
 ==============================================================================
 
 date: 4-21-22
