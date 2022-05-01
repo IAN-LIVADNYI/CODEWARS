@@ -1,3 +1,18 @@
+date: 4-30-22
+==============
+https://www.codewars.com/kata/5942b066db68b6f35f000084
+SELECT project, commits, contributors,
+REGEXP_REPLACE(address, '[0-9]', '!', 'g') AS address FROM repositories;
+
+==================================================================================
+date: 4-27-22
+==============
+https://www.codewars.com/kata/5943a58f95d5f72cb900006a/train/sql
+SELECT SUBSTRING(project FROM 1 FOR commits) AS project,
+       RIGHT(address, contributors) AS address
+       FROM repositories;
+
+====================================================================
 date: 4-26-22
 ==============
 let arr = [1,2,6,8,6,8,9,5,4,6,5,3,9,4,4,5,4,5,8,9,5,6,3,5,4,7,5,6,3,3,10];
