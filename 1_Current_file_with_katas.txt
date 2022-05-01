@@ -1,3 +1,10 @@
+date: 4-30-22
+==============
+https://www.codewars.com/kata/5942b066db68b6f35f000084
+SELECT project, commits, contributors,
+REGEXP_REPLACE(address, '[0-9]', '!', 'g') AS address FROM repositories;
+
+==================================================================================
 date: 4-27-22
 ==============
 https://www.codewars.com/kata/5943a58f95d5f72cb900006a/train/sql
