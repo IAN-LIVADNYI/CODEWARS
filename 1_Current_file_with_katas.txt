@@ -1,3 +1,42 @@
+date: 5-1-22
+==============
+https://www.codewars.com/kata/59342039eb450e39970000a6/train/javascript
+function oddCount(n){
+    let arr =[];
+    let i = 1;
+    while (i < n){
+        if(i % 2 !== 0){
+            arr.push(i);
+        }
+        i++
+    }
+    return arr.length;
+}
+
+//OR
+
+function oddCount(n){
+  return n % 2 === 0 ? n / 2 : (n - 1) / 2
+}
+
+//OR
+
+oddCount = n => Math.floor(n / 2)
+
+==================================================================================
+https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/javascript
+maps = x => {
+  let newArr = x.map(el => el * 2);
+  return newArr;
+}
+
+//OR
+
+maps = x => newArr = x.map(el => el * 2);
+
+==========================================================
+https://www.codewars.com/kata/5861d28f124b35723e00005e/train/javascript
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => distanceToPump / mpg <= fuelLeft ? true : false;
 date: 4-30-22
 ==============
 https://www.codewars.com/kata/5942b066db68b6f35f000084
