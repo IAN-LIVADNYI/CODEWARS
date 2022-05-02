@@ -1,13 +1,13 @@
-let arr = [1,2,6,8,6,8,9,5,4,6,5,3,9,4,4,5,4,5,8,9,5,6,3,5,4,7,5,6,3,3,10];
-function findFirstDuplicate(arr){
-    for(let i = 0; i < arr.length; i++){
-        for(let k = i+1; k < arr.length; k++){
-            if(arr[i] === arr[k]) return arr[k];
+function oddCount(n){
+    let arr =[];
+    let i = 1;
+    while (i < n){
+        if(i % 2 !== 0){
+            arr.push(i);
         }
+        i++
     }
-return "no doubles";
-};
-console.log(findFirstDuplicate(arr))
+    return arr.length;
+}
 
-
-
+console.log(oddCount(15023))
