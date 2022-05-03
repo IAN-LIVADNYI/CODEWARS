@@ -1,3 +1,21 @@
+date: 5-3-22
+==============
+https://www.codewars.com/kata/602afedfd4a64d0008eb4e6e/train/javascript
+function getDay(day,isLeap) {
+    let arrMonth = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const leapYear = new Date(2020, 0, 1);
+    const regYear = new Date(2021, 0, 1);
+    if (isLeap) {
+        leapYear.setDate(day);
+        return res = `${arrMonth[leapYear.getMonth()]}, ${leapYear.getDate()}`;
+    }
+    else {
+        regYear.setDate(day);
+        return res = `${arrMonth[regYear.getMonth()]}, ${regYear.getDate()}`;
+    }
+}
+
+=============================================================================
 date: 5-1-22
 ==============
 https://www.codewars.com/kata/59342039eb450e39970000a6/train/javascript
