@@ -1,5 +1,8 @@
 date: 5-3-22
 ==============
+
+date: 5-3-22
+==============
 https://www.codewars.com/kata/602afedfd4a64d0008eb4e6e/train/javascript
 function getDay(day,isLeap) {
     let arrMonth = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
