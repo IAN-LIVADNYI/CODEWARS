@@ -1,6 +1,18 @@
 date: 5-5-22
 ==============
-//homework
+const upperCaseInEachWord = phrase => {
+    let newPh = `${phrase[0].toUpperCase()}`;
+    for (let i = 1; i <= phrase.length - 1; i++) {
+        if (phrase[i - 1] === ' ')
+            newPh += phrase[i].toUpperCase();
+        else newPh += phrase[i];
+    }
+    return newPh;
+}
+console.log(upperCaseInEachWord('hello world!'));
+
+==========================================================================
+//homework from Liza's class
 // 1. Создайте переменные с именами a, b и с, присвойте
 // переменным любые цифровый значения (целые или дробные).
 // С помощью переприсваивания переменных увеличьте a на 2,
@@ -19,7 +31,6 @@ console.log(a,b,c)
 // Количество пачек печенья, цена за пачку
 // Определить общую стоимость товара
 // Присвоить всем переменным значения, подсчитать общую стоимость покупки, Вывести в консоль.
-
 let orangeWeight = 5;
 let orangePrice = 2.5;
 let appleWeight = 3;
@@ -28,7 +39,7 @@ let cookies = 2;
 let cookiesPrice = 5.5;
 let total = orangePrice*orangeWeight + appleWeight*applePrice + cookies*cookiesPrice;
 console.log(total)
-=======================
+
 //3.  fixe the code
 //A.Print the result of the sum
 let a = 1;
