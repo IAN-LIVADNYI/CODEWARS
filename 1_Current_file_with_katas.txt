@@ -1,5 +1,71 @@
 date: 5-5-22
 ==============
+//homework
+// 1. Создайте переменные с именами a, b и с, присвойте
+// переменным любые цифровый значения (целые или дробные).
+// С помощью переприсваивания переменных увеличьте a на 2,
+// уменьшите b на 4 и разделите с на 6. Выведите a, b, c в консоль.
+
+let a,b,c;
+a=1,b=2,c=3;
+a = a+2;
+b = b-4;
+c = c/6;
+console.log(a,b,c)
+========================
+// 2. Объявить переменные для товаров в продуктовом магазине:
+// Вес апельсинов в кг, Цена апельсинов за кг
+// Вес яблок, цена за кг
+// Количество пачек печенья, цена за пачку
+// Определить общую стоимость товара
+// Присвоить всем переменным значения, подсчитать общую стоимость покупки, Вывести в консоль.
+
+let orangeWeight = 5;
+let orangePrice = 2.5;
+let appleWeight = 3;
+let applePrice = 3.5;
+let cookies = 2;
+let cookiesPrice = 5.5;
+let total = orangePrice*orangeWeight + appleWeight*applePrice + cookies*cookiesPrice;
+console.log(total)
+=======================
+//3.  fixe the code
+//A.Print the result of the sum
+let a = 1;
+let b = 2;
+let result = 0;
+result = a + b;
+console.log(result);
+
+//B.Print the result of string concatenation
+let name1 = 'Hello ';
+let name2 = 'World!';
+let str = name1 + name2;
+console.log(str);
+
+//C.Print the result of multiplication
+let a = 4;
+let b = 2;
+let multiple = a * b;
+console.log(multiple);
+
+// 4.
+// Объявить переменную, значением которой будет ваше имя.
+// Объявить переменную со значением Hello World.
+// Сконструировать изъем фразу: Hello World! My name is <имя>. Вывести ее в консоль
+let name = "Ian";
+let firstPhrase = 'Hello World';
+let phrase = `${firstPhrase}! My name is ${name}`;
+console.log(phrase);
+
+// 5. Найти остаток от деления на 5 для чисел: 67; 132; -9; 3
+// Вывести результат в консоль в виде фраз
+// «остаток от деления 67 на 5 равен <ответ>»
+let five = 5;
+let a = 67, b = 132, c = -9, d = 3;
+console.log(`остаток от деления ${d} на ${five} равен ${d % five}`);
+=======================================================================
+
 const number_cardinality = my_number =>{
     if(my_number % 10 !== 0 && my_number % 2 === 0) return 'even';
     if(my_number % 10 === 0) return 'zero';
