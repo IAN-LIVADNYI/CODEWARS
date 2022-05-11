@@ -19,7 +19,5 @@ function getDay(day,isLeap) {
     }
     return `January, ${day}`
 }
-console.log(getDay(182, false))
+console.log(getDay(365, false))
 
-//(arrMonth[i+1][1]
-// for (let i = 0; day > 0; i++) {
