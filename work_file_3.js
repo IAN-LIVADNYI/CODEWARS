@@ -31,18 +31,8 @@
 // в сутках, в месяце. Выведите результат в консоль.
 
 
-//8. Студент решил взять курс. Курс начинается с 1 Сентября по
-// 31 Декабря. Каждый день студент занимается по 3 часа.
-// Напишите, сколько всего времени студент потратит на весь курс.
-// Выведете результат в консоль.
+//8. Студент решил взять курс. Курс начинается с 1 Сентября по 31 Декабря. Каждый день студент занимается по 3 часа.
+// Напишите, сколько всего времени студент потратит на весь курс. Выведете результат в консоль.
 
-
-//9. To burn calories for 1 chocolate Marusya needs to run 2km, and to burn calories for 1 ice cream 5km.
-// How far she has to run if she breaks her diet by eating 2,5 chocolates and 3 ice creams. Print the distance in the console.
-const diet = () => {
-    let chocolateDis = 2;
-    let icecreamDis = 5;
-    let res = 2.5 * chocolateDis + 3 * icecreamDis
-    console.log(res);
-}
-diet();
+let sept1 = new Date(2022,8,1).getDate();
+console.log(sept1,dec31)
