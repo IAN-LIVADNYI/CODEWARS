@@ -33,6 +33,10 @@
 
 //8. Студент решил взять курс. Курс начинается с 1 Сентября по 31 Декабря. Каждый день студент занимается по 3 часа.
 // Напишите, сколько всего времени студент потратит на весь курс. Выведете результат в консоль.
-
-let sept1 = new Date(2022,8,1).getDate();
-console.log(sept1,dec31)
+var sept1 = new Date(2022,8,1);
+var dec31 = new Date(2022,11,31);
+var start = new Date(sept1.getFullYear(), 0, 0);
+var diff1 = sept1-start;
+var diff2 = dec31-start;
+var oneDay = 1000 * 60 * 60 * 24
+console.log(Math.ceil((diff2-diff1)/oneDay));
