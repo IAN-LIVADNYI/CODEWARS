@@ -1,3 +1,28 @@
+date: 5-13-22
+==============
+//10. Elon Mask building Falcon 9 rockets.
+// The cost of 1 Falcon 9 equal 57 Tesla model X cars. Trip to the moon requires 13 rockets.
+// Can you help Elon to figure out how many cars he needs to sell in order to achieve his goal?
+const howMuch = tesla => {
+    tesla = 1;
+    let falcon9 = 57 * tesla;
+    let tripTotheMoon = 13 * falcon9;
+    console.log(tripTotheMoon);
+}
+howMuch()
+
+=====================================================================
+//9. To burn calories for 1 chocolate Marusya needs to run 2km, and to burn calories for 1 ice cream 5km.
+// How far she has to run if she breaks her diet by eating 2,5 chocolates and 3 ice creams. Print the distance in the console.
+const diet = () => {
+    let chocolateDis = 2;
+    let icecreamDis = 5;
+    let res = 2.5 * chocolateDis + 3 * icecreamDis;
+    console.log(res);
+}
+diet();
+
+=====================================================================
 date: 5-8-22
 ==============
 function strongCoder(number) {
