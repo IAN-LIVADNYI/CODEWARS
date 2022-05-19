@@ -1,3 +1,6 @@
+date: 5-19-22
+==============
+
 date: 5-14-22
 ==============
 //https://www.codewars.com/kata/602afedfd4a64d0008eb4e6e/train/javascript
