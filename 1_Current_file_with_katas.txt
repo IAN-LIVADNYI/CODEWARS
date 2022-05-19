@@ -1,3 +1,29 @@
+date: 5-14-22
+==============
+//https://www.codewars.com/kata/602afedfd4a64d0008eb4e6e/train/javascript
+function getDay(day,isLeap) {
+    let arrMonth = [['January', 31, 31], ['February', 28, 29], ['March', 31, 31], ['April', 30, 30], ['May', 31, 31], ['June', 30, 30], ['July',31,31], ['August',31,31], ['September',30,30], ['October',31,31], ['November',30,30], ['December',31,31], ['December',0,0]];
+    if (day > 31 && isLeap === false) {
+        let printRes;
+        for (let i = 0; day > 0 || i > arrMonth.length-1; i++) {
+            day = day - arrMonth[i][1];
+            if ((day - arrMonth[i + 1][1]) < 0) {
+                printRes = `${arrMonth[i][0]}, ${day+arrMonth[i][1]}`;
+            }
+            else if ((day - arrMonth[i + 1][1]) === 0) {
+                printRes = `${arrMonth[i][0]}, ${arrMonth[i][1]}`
+            }
+            else {
+                printRes = `${arrMonth[i + 2][0]}, ${day - arrMonth[i + 1][1]}`
+            }
+        }
+        return printRes;
+    }
+    return `January, ${day}`
+}
+console.log(getDay(365, false))
+
+====================================================================================
 date: 5-13-22
 ==============
 //10. Elon Mask building Falcon 9 rockets.
@@ -23,6 +49,17 @@ const diet = () => {
 diet();
 
 =====================================================================
+//8. Студент решил взять курс. Курс начинается с 1 Сентября по 31 Декабря. Каждый день студент занимается по 3 часа.
+// Напишите, сколько всего времени студент потратит на весь курс. Выведете результат в консоль.
+var sept1 = new Date(2022,8,1);
+var dec31 = new Date(2022,11,31);
+var start = new Date(sept1.getFullYear(), 0, 0);
+var diff1 = sept1-start;
+var diff2 = dec31-start;
+var oneDay = 1000 * 60 * 60 * 24
+console.log(Math.ceil((diff2-diff1)/oneDay));
+
+=======================================================================================
 date: 5-8-22
 ==============
 function strongCoder(number) {
@@ -145,25 +182,6 @@ const number_cardinality = my_number =>{
     if(my_number % 10 === 0) return 'zero';
     if(my_number % 2 !== 0 && my_number % 5 !== 0) return 'odd';
     if(my_number % 5 === 0) return 'five'
-}
-
-=========================================================================
-
-date: 5-3-22
-==============
-https://www.codewars.com/kata/602afedfd4a64d0008eb4e6e/train/javascript
-function getDay(day,isLeap) {
-    let arrMonth = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    const leapYear = new Date(2020, 0, 1);
-    const regYear = new Date(2021, 0, 1);
-    if (isLeap) {
-        leapYear.setDate(day);
-        return res = `${arrMonth[leapYear.getMonth()]}, ${leapYear.getDate()}`;
-    }
-    else {
-        regYear.setDate(day);
-        return res = `${arrMonth[regYear.getMonth()]}, ${regYear.getDate()}`;
-    }
 }
 
 =============================================================================
