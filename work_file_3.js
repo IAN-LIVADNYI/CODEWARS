@@ -27,5 +27,13 @@
 // Output the result to the console.
 
 
-//7. Напишите скрипт, который считает количество секунд в часе,
-// в сутках, в месяце. Выведите результат в консоль.
+//7. Напишите скрипт, который считает количество секунд в часе, в сутках, в месяце. Выведите результат в консоль.
+ const counterSec = (h = 0,d = 0,m = 0) => {
+    let secInHour = 60 *60;
+   let resH = h * secInHour;
+   let resD = d * 24 * secInHour;
+   let resM = m * 31 * 24 * secInHour;
+   return resM+resD+resH;
+ }
+
+ console.log(counterSec(1,1))
