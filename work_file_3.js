@@ -17,7 +17,10 @@
 // Объем куба составляет {вложить полученный результат} см.
 
 
-//5. Дана строка: "Children can have different hobbies",
-// вычислить длину этой строки, найти элемент под первым
-// и последним индексом, вывести результаты в консоль.
-
+//5. Дана строка: "Children can have different hobbies",вычислить длину этой строки,
+// найти элемент под первым и последним индексом, вывести результаты в консоль.
+let line = "Children can have different hobbies";
+let lineLength = line.length;
+let firstChar = line[0];
+let lastChar = line[line.length-1];
+console.log(lineLength,firstChar,lastChar);
