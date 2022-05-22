@@ -11,6 +11,15 @@ date: 5-21-22
  console.log(counterSec(1,1))
 
  ==================================================================
+ //6. Create a String with a value "208". Convert String to number. Find the remainder after division by "5". Output the result to the console.
+ let str = "208";
+ // let number = +str;
+ // let number = Number(str);
+ let number = str * 1;
+ let reminder = number % 5;
+ console.log(reminder);
+
+ ==================================================================
 
 date: 5-14-22
 ==============
