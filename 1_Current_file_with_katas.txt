@@ -1,3 +1,12 @@
+date: 5-23-22
+==============
+//3. Write a code that calculates your BMI (Body Mass Index),
+// where weight=<your_weight_in_kg> and height=<your_height_in_m>.
+// Print the result to the console. BMI = kg/m2
+const bmi = (weight, height) => weight / Math.pow(height,2);
+console.log(bmi(84,1.89));
+
+=========================================================================
 date: 5-21-22
 ==============
 //4. Дана сторона куба  5 см. Найти объем куба. Вывести ответ в виде строки: Объем куба составляет {вложить полученный результат} см.
