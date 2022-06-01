@@ -144,7 +144,7 @@ function strongCoder(number) {
         return true;
     }
 }
-console.log(strongCoder(9935))
+strongCoder(9935);
 
 ===========================================================================
 date: 5-5-22
