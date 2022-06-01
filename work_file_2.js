@@ -31,5 +31,5 @@ function strongCoder(number) {
         return true;
     }
 }
-console.log(strongCoder(9935))
+strongCoder(9935)
 
