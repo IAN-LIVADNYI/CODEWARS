@@ -1,3 +1,14 @@
+date: 6-1-22
+==============
+//1. Create 5 variables, initialize them with integers and find the average of variables. Print the result to console
+let variables = [{a : 1}, {b : 2}, {c : 3}, {d : 4}, {e : 5}];
+let sum = 0;
+// variables.forEach(el => sum += Number(Object.values(el)));
+// console.log(sum);
+variables.map(el => sum += Number(Object.values(el)));
+console.log(sum);
+========================================================================
+
 date: 5-23-22
 ==============
 //3. Write a code that calculates your BMI (Body Mass Index),
