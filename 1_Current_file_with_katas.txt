@@ -1,3 +1,24 @@
+date: 8-6-22
+==============
+function natural(x){
+    let listForConsole = [1];
+    for (let i = 2; i < x; i++){
+        let ost_0 = [];
+        for(let j = 1; j <= i; j++){
+            if(i % j == 0){
+                ost_0.push(i);
+            }
+        }
+        if (ost_0.length == 2){
+            listForConsole.push(i)
+        }
+    }
+    return listForConsole;
+}
+console.log(natural(114))
+
+======================================================================
+
 date: 6-3-22
 ==============
 
